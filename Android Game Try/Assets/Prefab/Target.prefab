@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23283339022241648}
   - component: {fileID: 54296042242617168}
   - component: {fileID: 114926298285179384}
+  - component: {fileID: 114089368654745004}
   m_Layer: 0
   m_Name: Target
   m_TagString: Log
@@ -38,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1159014165489100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.26, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 0, y: -2, z: 1}
+  m_LocalScale: {x: 6, y: 6.5, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,6 +101,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &114089368654745004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1159014165489100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e653a018394fcfa45a973dcc7b47b1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 114926298285179384}
+  scoreText: {fileID: 0}
+  gameOverText: {fileID: 0}
 --- !u!114 &114926298285179384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,9 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphere: {fileID: 4437653547765780}
   angularVelocity: 2
-  angularVelocity1: 60
-  angularVelocity2: 120
-  angularVelocity3: 240
+  angularVelocity1: 80
+  angularVelocity2: 180
   time: 0
   MinDuration: 2
   MaxDuration: 6
@@ -129,5 +143,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.35
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.34795475
+  m_Center: {x: 0, y: -0.0020452414, z: 0}

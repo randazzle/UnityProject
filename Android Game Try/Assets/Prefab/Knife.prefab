@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1824536421541868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.5, z: -9}
+  m_LocalPosition: {x: 5.489722, y: -3.0940704, z: 0.7794528}
   m_LocalScale: {x: 0.5, y: 2.2, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -112,7 +112,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.7, y: 1, z: 0.7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114474307185566708
 MonoBehaviour:
@@ -188,7 +188,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1024862224
+  randomSeed: -631047695
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -276,9 +276,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.54901963, g: 0.40000004, b: 0.14509805, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.37254903, g: 0.43921572, b: 0.21176472, a: 1}
+      maxColor: {r: 0.91372555, g: 0.3019608, b: 0.20784315, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

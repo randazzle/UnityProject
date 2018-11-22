@@ -4,10 +4,11 @@ using UnityEngine;
 public class RotationSphere : MonoBehaviour {
 
     public Transform sphere;
-    public float angularVelocity = 2f;
+    //public float angularVelocity = 2f;
+    public float angularVelocity;
     public float angularVelocity1 = 1f;
     public float angularVelocity2 = 2f;
-    public float angularVelocity3 = 3f;
+    //public float angularVelocity3 = 3f;
     private Vector3 axisOfRotation;
     public float time = 0f;
     //private int oldSec = 1;
@@ -18,7 +19,7 @@ public class RotationSphere : MonoBehaviour {
 
     void Start()
     {
-        angularVelocity = angularVelocity1;
+        angularVelocity = Random.Range(angularVelocity1,angularVelocity2);
         axisOfRotation = Random.onUnitSphere;
 
     }
@@ -42,7 +43,8 @@ public class RotationSphere : MonoBehaviour {
         {
             Debug.Log(" Old Sec Here " + oldsec);
             axisOfRotation = Random.onUnitSphere;
-            if ((int)time >= 20 && (int)time < 40)
+
+            /*if ((int)time >= 20 && (int)time < 40)
             {
                 Debug.Log("Velocity Change2");
                 angularVelocity = angularVelocity2;
@@ -52,7 +54,12 @@ public class RotationSphere : MonoBehaviour {
                 Debug.Log("Velocity Change3");
                 angularVelocity = angularVelocity3;
             }
+            */
+
+            
+
             rDuration = Random.Range(MinDuration, MaxDuration);
+            angularVelocity = Random.Range(angularVelocity1, angularVelocity2);
         }
 
         
