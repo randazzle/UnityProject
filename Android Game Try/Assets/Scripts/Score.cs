@@ -5,9 +5,9 @@ public class Score : MonoBehaviour {
 
     public RotationSphere target;
 
-    public Text scoreText;
-    public Text gameOverText;
-    public Text highScoreText;
+    public TextMesh scoreText;
+    public TextMesh gameOverText;
+    public TextMesh highScoreText;
 
     public GameObject CongratultionsText;
     public GameObject YouMadeText;
